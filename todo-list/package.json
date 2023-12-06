@@ -16,5 +16,9 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.0.0"
+	},
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8"
 	}
 }
