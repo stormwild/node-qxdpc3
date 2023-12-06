@@ -10,7 +10,7 @@
     "test": "gziolo"
   },
   "scripts": {
-    "test": "echo asd $npm_package_config_test",
+    "test": "echo $npm_package_config_test",
     "dev": "node capture-url.js && run-p php-server start",
     "php-server": "node wp/server.js",
     "build": "cd todo-list && wp-scripts build",
@@ -23,14 +23,14 @@
   },
   "dependencies": {
     "@php-wasm/node": "^0.0.3",
-    "@wordpress/scripts": "^26.0.0",
+    "@wordpress/scripts": "^26.18.0",
     "body-parser": "^1.20.2",
     "dummy-package-please-ignore": "^0.0.2",
     "dummy-wpdata-please-ignore": "^0.0.4",
-    "esbuild": "^0.17.12",
-    "esbuild-sass-plugin": "^2.8.0",
+    "esbuild": "^0.19.8",
+    "esbuild-sass-plugin": "^2.16.0",
     "express": "^4.18.2",
-    "node-fetch": "^3.3.1",
+    "node-fetch": "^3.3.2",
     "npm-run-all": "^4.1.5",
     "raw-body": "^2.5.2"
   },
@@ -38,7 +38,6 @@
     "startCommand": "cp .bashrc ~/.jshrc && sh ~/.jshrc && pnpm install && pnpm run dev"
   },
   "engines": {
-      "node": ">=18",
-      "pnpm": ">=8"
+    "node": ">=18"
   }
 }
