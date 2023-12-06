@@ -35,6 +35,12 @@
     "raw-body": "^2.5.2"
   },
   "stackblitz": {
-    "startCommand": "cp .bashrc ~/.jshrc && sh ~/.jshrc && npm install && npm run dev"
-  }
+    "startCommand": "cp .bashrc ~/.jshrc && sh ~/.jshrc && pnpm install && pnpm run dev"
+  },
+ 
+    "engines": {
+        "node": ">=18",
+        "pnpm": ">=8"
+    }
+
 }
